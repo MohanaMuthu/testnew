@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CBF9F0F55D2_curated_account_Create.Bundle;assembly=CBF9F0F55D2_curated_.8XHzS1H7MNL15bdNK48T4SJ4" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Account" Type="InArgument(uiascb:curated_account_Create)" />
+  </x:Members>
+  <this:Main.Account>
+    <InArgument x:TypeArguments="uiascb:curated_account_Create" />
+  </this:Main.Account>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>564,571.3333333333334</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CBF9F0F55D2_curated_account_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CBF9F0F55D2_curated_account_Create.Bundle</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Factories</x:String>
+      <x:String>Designer.BackEnd</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Descriptor</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
+      <x:String>UiPath.BAF.Infrastructure</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
+      <x:String>UiPath.Salesforce.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>CBF9F0F55D2_curated_.LaBo22MQKiL1BRE0533STIz1</AssemblyReference>
+      <AssemblyReference>CBF9F0F55D2_curated_.LaBo22MQKiL1BRE0533STIz1</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>CBF9F0F55D2_curated_.8XHzS1H7MNL15bdNK48T4SJ4</AssemblyReference>
+      <AssemblyReference>CBF9F0F55D2_curated_.8XHzS1H7MNL15bdNK48T4SJ4</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>System.Activities.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.Salesforce.IntegrationService.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="450,506.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="variable2" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="ee2e2800-42eb-4b2f-99f3-7fbf9f0f55d2" DisplayName="Create Account" sap:VirtualizedContainerService.HintSize="388,396" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="111d59b7-0301-31ba-bcf4-ed6d3e37c7bf">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="Name" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">Name</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="AccountSource" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Type" Type="FieldArgument" />
+        <isactr:FieldObject Name="Ownership" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Website" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Phone" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="BillingStreet" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="BillingCity" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="BillingPostalCode" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="BillingCountry" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Description" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Industry" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="AccountNumber" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="out_Id" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="x:String" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_curated_account" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:curated_account_Create">[Account]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+    </isactr:ConnectorActivity>
+  </Sequence>
+</Activity>
